@@ -299,7 +299,7 @@
         });
 
         const audioMap = notes.reduce((map, note) => {
-            map[note] = `audio/${note}.mp3`;
+            map[note] = `${note}.mp3`;
             return map;
         }, {});
 
@@ -321,7 +321,7 @@
             cat.classList.toggle('animate');
 
             if (catAudio == null){
-                catAudio = new Audio(`audio/sting.mp3`);
+                catAudio = new Audio(`sting.mp3`);
                 catAudio.play();
                 
 
